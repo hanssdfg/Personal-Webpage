@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Strengths - Hanna Varughese</title>
+  <style>
+    body {
+      background-color: #fdfdfd;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark {
+      background-color: #1a1a1a;
+      color: #eee;
+    }
+    header, footer {
+      background: #004d66;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 { margin: 0; font-size: 2rem; }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    body.dark section { background: #262626; border: 1px solid #444; }
+    h2 { color: #004d66; }
+    body.dark h2 { color: #80dfff; }
+    ul { padding-left: 20px; }
+    a { color: #004d66; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    #darkModeBtn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      padding: 10px;
+      background: #004d66;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="darkModeBtn">🌙 Toggle Dark Mode</button>
+
+  <header>
+    <h1>My Strengths</h1>
+    <p>Hanna Varughese</p>
+    <p><a href="index.html" style="color:white;">⬅ Back to Home</a></p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Core Strengths</h2>
+      <ul>
+        <li><strong>Problem Solving:</strong> I enjoy tackling challenges and approaching problems logically to find efficient solutions.</li>
+        <li><strong>Adaptability:</strong> I learn new tools and technologies quickly and adjust well to different environments.</li>
+        <li><strong>Teamwork:</strong> Active contributor in group projects and hackathons, balancing collaboration with leadership when needed.</li>
+        <li><strong>Technical Curiosity:</strong> Driven by a passion to explore AI, ML, and cybersecurity beyond the classroom.</li>
+        <li><strong>Communication:</strong> I can clearly explain ideas, making it easier to collaborate with both technical and non-technical people.</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Hanna Varughese | All rights reserved
+  </footer>
+
+  <script>
+    const darkBtn = document.getElementById("darkModeBtn");
+    darkBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Weaknesses - Hanna Varughese</title>
+  <style>
+    body {
+      background-color: #fdfdfd;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.dark {
+      background-color: #1a1a1a;
+      color: #eee;
+    }
+    header, footer {
+      background: #004d66;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 { margin: 0; font-size: 2rem; }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    body.dark section { background: #262626; border: 1px solid #444; }
+    h2 { color: #004d66; }
+    body.dark h2 { color: #80dfff; }
+    ul { padding-left: 20px; }
+    a { color: #004d66; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    #darkModeBtn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      padding: 10px;
+      background: #004d66;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="darkModeBtn">🌙 Toggle Dark Mode</button>
+
+  <header>
+    <h1>My Weaknesses</h1>
+    <p>Hanna Varughese</p>
+    <p><a href="index.html" style="color:white;">⬅ Back to Home</a></p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Areas I’m Working On</h2>
+      <ul>
+        <li><strong>Perfectionism:</strong> I sometimes spend too much time polishing details, which can slow me down. I’m learning to balance speed and quality.</li>
+        <li><strong>Delegation:</strong> I often take on too much responsibility myself. I’m improving at trusting others and sharing work in teams.</li>
+        <li><strong>Public Speaking:</strong> While I can communicate one-on-one well, I still get nervous presenting to large groups. I’m actively practicing this through events.</li>
+        <li><strong>Overcommitting:</strong> My enthusiasm sometimes leads me to sign up for too many tasks at once. I’m learning to prioritize effectively.</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Hanna Varughese | All rights reserved
+  </footer>
+
+  <script>
+    const darkBtn = document.getElementById("darkModeBtn");
+    darkBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+</body>
+</html>
